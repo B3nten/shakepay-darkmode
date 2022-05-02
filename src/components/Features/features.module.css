@@ -1,0 +1,29 @@
+.wrapper {
+    @apply flex flex-col items-center text-center space-y-4
+}
+
+.img_wrapper {
+    @apply relative p-2
+}
+
+.img_wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+    background-color: #009FFF;
+    z-index: -10;
+    opacity: .5;
+    filter: blur(15px)
+}
+
+.img_wrapper>img {
+    @apply w-12 h-12
+}
+
+.title {
+    @apply text-2xl
+}

@@ -1,0 +1,50 @@
+.marquee{
+    animation: marquee 100s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+      transform: translate3D(0%, 0,0);
+    }
+    100% {
+      transform: translate3D(-50%, 0,0);
+    }
+  }
+
+  .card{
+    height: 20rem;
+    width: 26rem;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.514);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition:all;
+    transition-duration: 300ms;
+  }
+
+  .card:hover{
+    border-color: #009FFF;
+  }
+
+  .card > .title{
+    font-size: 1.5rem;
+    transition:all;
+    transition-duration: 300ms;
+  }
+
+  .card:hover .title{
+    color: #009FFF;
+  }
+
+  .card > .text{
+    white-space: normal;
+    opacity: .7;
+  }
+
+  .card :not(:last-child){
+    margin-bottom: 1.5rem;
+  }
